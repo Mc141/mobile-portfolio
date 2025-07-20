@@ -1587,3 +1587,41 @@ input, select, textarea {
 		body.is-preload-0 #footer {
 			opacity: 0;
 		}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Work section project images */
+#work .content .inner section img {
+  width: 100%;           /* Full width of the container */
+  max-width: 600px;      /* Limit max size for large screens */
+  height: auto;          /* Maintain aspect ratio */
+  display: block;        /* Remove inline gap */
+  margin: 1.5em auto;    /* Vertical spacing + center horizontally */
+  border-radius: 8px;    /* Slightly rounded corners */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Soft shadow for depth */
+  object-fit: cover;     /* Maintain aspect, crop if needed */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;       /* Indicate interactivity if desired */
+}
+
+#work .content .inner section img:hover {
+  transform: scale(1.03);          /* Slight zoom on hover */
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  #work .content .inner section img {
+    max-width: 100%;      /* Full width on small screens */
+    margin: 1em 0;        /* Smaller vertical spacing */
+  }
+}
