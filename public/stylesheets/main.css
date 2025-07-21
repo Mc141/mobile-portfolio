@@ -1625,3 +1625,32 @@ input, select, textarea {
     margin: 1em 0;        /* Smaller vertical spacing */
   }
 }
+
+
+
+
+
+.error-message {
+  color: #e74c3c;
+  font-size: 0.85em;
+  margin-top: 4px;
+  display: block;
+}
+
+.input-error {
+  border-color: #e74c3c !important;
+  outline-color: #e74c3c;
+}
+
+
+
+#form-message {
+	margin: 20px 0; 
+	font-weight: bold; 
+	font-size: 1.1em;
+  transition: opacity 1s ease;
+  opacity: 1;
+}
+#form-message.fade-out {
+  opacity: 0;
+}

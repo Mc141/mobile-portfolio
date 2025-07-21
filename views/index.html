@@ -3,14 +3,17 @@
 
 <html>
 	<head>
-		<title>Untitled</title>
+		<title>M.C. Wolmarans</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="stylesheets/main.css" />
+
+		<script defer src="javascripts/validator.js"></script>
+		<noscript><link rel="stylesheet" href="stylesheets/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload-0 is-preload-1">
 
+		
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -27,6 +30,8 @@
 				<p>Inspired by the harmony of divine order</p>
 
 			</header>
+
+			<div id="form-message"></div>
 			<nav id="nav">
 				<ul class="actions stacked special animated spinY">
 					<li><a href="#work" class="button">Work</a></li>
@@ -154,25 +159,41 @@
 								<header>
 									<h2>Contact</h2>
 								</header>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="5"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><a href="" class="button submit">Send Message</a></li>
-									</ul>
-								</form>
+
+								<script type="text/javascript">
+									
+								</script>
+
+						<form method="post" action="contact" id="contact-form">
+						<div class="fields">
+							<div class="field half">
+							<label for="first-name">First Name</label>
+							<input type="text" name="first-name" id="first-name" />
+							<span class="error-message"></span>
+							</div>
+							<div class="field half">
+							<label for="last-name">Last Name</label>
+							<input type="text" name="last-name" id="last-name" />
+							<span class="error-message"></span>
+							</div>
+							<div class="field half">
+							<label for="email">Email</label>
+							<input type="text" name="email" id="email" />
+							<span class="error-message"></span>
+							</div>
+							<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="5"></textarea>
+							<span class="error-message"></span>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><button type="submit" class="button submit" id="submit-button">Send Message</button></li>
+						</ul>
+						</form>
+
+
+
 							</div>
 						</div>
 					</article>
@@ -433,17 +454,17 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; Untitled</p>
+						<p class="copyright">&copy; M.C. Wolmarans</p>
 					</footer>
 
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="javascripts/jquery.min.js"></script>
+			<script src="javascripts/browser.min.js"></script>
+			<script src="javascripts/breakpoints.min.js"></script>
+			<script src="javascripts/util.js"></script>
+			<script src="javascripts/main.js"></script>
 
 	</body>
 </html>
